@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Endereço</title>
+
+    <link rel="stylesheet" href="./Cep.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <h1>住所検索</h1>
+            <p>Consulta de CEP</p>
+        </div>
+
+        <div class="card">
+
+            <input type="text" id="cep" placeholder="Digite o CEP">
+
+            <button onclick="buscarCEP()">Buscar</button>
+
+            <div class="grid">
+                <input type="text" id="estado" placeholder="UF">
+                <input type="text" id="cidade" placeholder="Cidade">
+                <input type="text" id="bairro" placeholder="Bairro">
+                <input type="text" id="endereco" placeholder="Rua">
+                <input type="text" id="numero" placeholder="Número">
+                <input type="text" id="complemento" placeholder="Complemento">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./Cep.js"></script>
+
+</body>
+
+</html>

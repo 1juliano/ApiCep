@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: #0d0d10;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* fundo sutil japonês */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top, #ff2a2a22, transparent),
+                radial-gradient(circle at bottom, #2a7fff22, transparent);
+    z-index: 0;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+    width: 340px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #ff3b3b;
+}
+
+.header p {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.card {
+    background: rgba(20, 20, 25, 0.9);
+    border: 1px solid #ffffff10;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 20px #000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border: 1px solid #ffffff10;
+    background: #111;
+    color: white;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff2a2a, #ff6a00);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.grid {
+    margin-top: 10px;
+}
